@@ -1,0 +1,12 @@
+.header {
+  margin-block: 0;
+}
+
+.headerSub {
+  color: #AAA;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+}
