@@ -9,7 +9,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <div className="App-header-wrapper">
-          <h2 className="App-header">Hello, I am Smart AI</h2>
+          <h2 className="App-title">Hello, I am Smart AI</h2>
           <sub className="App-header-sub">I am here to help you and your customers</sub>
         </div>
       </header>

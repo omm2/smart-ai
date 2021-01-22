@@ -1,9 +1,13 @@
 .card {
-  border: 1px solid #AAA;
+  border: 2px solid #4dabf7;
   border-radius: 5px;
   cursor: pointer;
   margin: 1vmin 0;
   padding: 3vmin;
+}
+
+.selectedCard {
+  background-color: #c4edff;
 }
 
 .title {
@@ -12,6 +16,7 @@
 
 .description {
   color: #AAA;
+  padding-bottom: 3vmin;
 }
 
 .expressions {
@@ -20,18 +25,29 @@
   justify-content: flex-start;
 }
 
-.expression {
-  border: 1px solid;
+.bubble {
   border-radius: 5px;
-  font-size: 0.5em;
+  font-size: 0.7em;
+  font-weight: 500;
   margin: 5px;
-  padding: 5px;
+  padding: 7px;
+}
+
+.expression {
+  background-color: #4dabf7;
+  color: #FFF;
+}
+
+.expression:first-of-type {
+  margin-left: 0;
+}
+
+.replies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
 }
 
 .reply {
-  border: 1px solid blue;
-  border-radius: 5px;
-  font-size: 0.5em;
-  margin: 5px;
-  padding: 5px;
+  background-color: #e3e3e3;
 }

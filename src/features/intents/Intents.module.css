@@ -1,12 +1,61 @@
+.headerWrapper {
+  padding: 3vmin 0;
+}
+
 .header {
   margin-block: 0;
 }
 
-.headerSub {
-  color: #AAA;
+.info {
+  align-items: center;
+  color: #4dabf7;
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttonsWrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.buttonsWrapper > * {
+  margin-right: 5px;
 }
 
 .cards {
   display: flex;
   flex-direction: column;
+}
+
+/* taken from here: https://css-tricks.com/overriding-default-button-styles/ */
+button {
+  display: inline-block;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin: 0;
+  text-decoration: none;
+  background: #4dabf7;
+  color: #ffffff;
+  font-family: sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: center;
+  transition: background 250ms ease-in-out,
+              transform 150ms ease;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+button:hover,
+button:focus {
+  background: #0053ba;
+}
+
+button:focus {
+  outline: 1px solid #fff;
+  outline-offset: -4px;
+}
+
+button:active {
+  transform: scale(0.99);
 }

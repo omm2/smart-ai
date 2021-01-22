@@ -1,5 +1,5 @@
 .App-content {
-  margin: 5vmin;
+  margin: 0 5vmin 5vmin;
 }
 
 .App-logo {
@@ -16,20 +16,24 @@
 
 .App-header {
   align-items: center;
+  background-color: #c4edff;
   display: flex;
-  margin: 5vmin;
+  justify-content: space-between;
+  padding: 3vmin 0;
 }
 
 .App-header-wrapper {
   flex: 1 90%;
 }
 
-.App-header {
+.App-title {
+  color: #4dabf7;
+  font-family: 'Courier New', Courier, monospace;
   margin-block: 0;
 }
 
 .App-header-sub {
-  color: #AAA;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 .App-link {
