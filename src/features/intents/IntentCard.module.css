@@ -2,6 +2,7 @@
   border: 2px solid #4dabf7;
   border-radius: 5px;
   cursor: pointer;
+  flex: 0 1 calc(50% - 7.5vmin);
   margin: 1vmin 0;
   padding: 3vmin;
 }
@@ -29,13 +30,13 @@
   border-radius: 5px;
   font-size: 0.7em;
   font-weight: 500;
-  margin: 5px;
   padding: 7px;
 }
 
 .expression {
   background-color: #4dabf7;
   color: #FFF;
+  margin: 5px 5px 5px 0;
 }
 
 .expression:first-of-type {
@@ -50,4 +51,5 @@
 
 .reply {
   background-color: #e3e3e3;
+  margin: 5px 0;
 }

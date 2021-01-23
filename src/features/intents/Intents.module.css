@@ -24,7 +24,8 @@
 
 .cards {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 /* taken from here: https://css-tricks.com/overriding-default-button-styles/ */
