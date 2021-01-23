@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
-import { useSelector } from 'react-redux';
-import styles from './Intents.module.css';
-import { IntentCard } from './IntentCard';
+import React, { useState } from 'react'
+import { useSelector } from 'react-redux'
+import styles from './Intents.module.css'
+import { IntentCard } from './IntentCard'
 
 export function Intents() {
   const intents = useSelector(state => state.intents.list)
-  const [selectedIds, setSelectedIds] = useState([]);
+  const [selectedIds, setSelectedIds] = useState([])
 
   function handleClick(id) {
     let ids

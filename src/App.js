@@ -1,7 +1,7 @@
-import React from 'react';
-import logo from './logo.svg';
-import { Intents } from './features/intents/Intents';
-import './App.css';
+import React from 'react'
+import logo from './logo.svg'
+import { Intents } from './features/intents/Intents'
+import './App.css'
 
 function App() {
   return (
@@ -17,7 +17,7 @@ function App() {
         <Intents />
       </div>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
