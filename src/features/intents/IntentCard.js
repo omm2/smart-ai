@@ -1,4 +1,4 @@
-import styles from './IntentCard.module.css';
+import styles from './IntentCard.module.css'
 
 export function IntentCard(props) {
   const expressionsList = props.intent.trainingData.expressions.map(expression => {
@@ -7,7 +7,13 @@ export function IntentCard(props) {
 
   const selectedClass = props.selected ? styles.selectedCard : ''
   return (
-    <div className={`${styles.card} ${selectedClass}`} onClick={() => props.handleClick(props.intent.id)}>
+    <div
+      role="gridcell"
+      className={`${styles.card} ${selectedClass}`}
+      onClick={() => props.handleClick(props.intent.id)}
+      aria-selected={props.selected}
+      data-testid={props.selected ? 'selected' : 'unselected'}
+    >
       <div className={styles.title}>{props.intent.name}</div>
       <div className={styles.description}>{props.intent.description}</div>
       <div className={styles.expressions}>{expressionsList}</div>

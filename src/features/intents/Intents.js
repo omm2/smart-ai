@@ -38,10 +38,10 @@ export function Intents() {
     <div>
       <header className={styles.headerWrapper}>
         <h3 className={styles.header}>Please choose your Intents</h3>
-        <sub className={styles.headerSub}>Below you can see the list with our pre-defined intends. Please chooose Intents important for your Application.</sub>
+        <sub className={styles.headerSub}>Below you can see the list with our pretrained intents. Please select intents that you want to use in your AI bot.</sub>
       </header>
       <div className={styles.info}>
-        <div>Items Selected: {selectedIds.length}</div>
+        <div>Items Selected: <span data-testid='counter'>{selectedIds.length}</span></div>
         <div className={styles.buttonsWrapper}>
           {(selectedIds.length > 0) && <button onClick={deselectAll}>Deselect All</button>}
           <button onClick={selectAll}>Select All</button>
